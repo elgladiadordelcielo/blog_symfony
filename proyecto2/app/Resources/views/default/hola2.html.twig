@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hola 2{% endblock %}
+
+{% block body %} <button type="button" class="btn btn-primary">Primary</button> <h1>Hola 2</h1>{% endblock %}
+
+        {% block stylesheets %}
+		{{parent()}}
+        <link rel="stylesheet" href="{{asset('css/hola2.css')}}"> 
+
+        {% endblock %}	

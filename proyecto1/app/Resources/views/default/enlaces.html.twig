@@ -1,0 +1,21 @@
+{% extends 'base.html.twig' %}
+
+
+{% block body %}
+	
+	<ul class="nav">
+		<li class="nav-item">
+			<a class="nav-link active" href="{{ path('homepage') }}">Index</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="{{ path('paginahola') }}">Hola</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="{{ path('paginahola2') }}">Hola 2</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="#">Disabled</a>
+		</li>
+	</ul>
+
+{% endblock %}

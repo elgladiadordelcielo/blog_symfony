@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>{% block title %}Hacienda Guadalupe{% endblock %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    {% block stylesheets %}
+
+            <link rel="stylesheet" type="text/css" href="{{asset('css/slick.css')}}">    
+            <link rel="stylesheet" type="text/css" href="{{asset('css/slick-theme.css')}}">
+            <link rel="stylesheet" type="text/css" href="{{asset('css/estilo.css')}}">
+            <link rel="stylesheet" type="text/css" href="{{asset('css/cookies.css')}}">
+            <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">  
+
+    {% endblock %}
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+</head>
+    <body>
+        {% block body %}
+
+
+<div id="contenedor">
+
+    <header>
+
+        <div class="centrado_a_1470">
+            <a id="logo"> <img src="images/logo.png" alt="logotipo"> </a>
+            <nav>
+                <ul id="menu_de_la_cabecera">       
+                    <li><a id="li_activo" class="enlaces_de_la_cabecera" href="index.html" >INICIO</a></li>
+                    <li><a class="enlaces_de_la_cabecera" href="sobre_nosotros.html" >SOBRE NOSOTROS</a></li>
+                    <li><a class="enlaces_de_la_cabecera" href="donde_estamos.html" >DONDE ESTAMOS</a></li>
+                    <li><a class="enlaces_de_la_cabecera" href="contacto.html" >CONTACTO</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+    </header>
+
+    <main>
+
+        <div class="centrado_a_1500 autoplay">
+
+            <div> <img class="centrado_a_1500" src="images/slide1.png" alt="fotos"> </div>
+
+            <div> <img class="centrado_a_1500" src="images/slide2.png" alt="fotos"> </div>
+
+            <div> <img class="centrado_a_1500" src="images/slide3.png" alt="fotos"> </div>      
+        </div>
+
+        <div id="main_grid" class="centrado_a_1500">
+
+            <div>
+
+                <h2 class="H2_del_inicio">HACIENDA</h2>
+
+                <img class="imagenes_chiquitas_de_inicio" src="images/hacienda.jpg" alt="hacienda">
+
+                <p class="parrafos_inicio_main">
+                    Hacienda del Siglo XVIII situada en Sevilla, que principalmente se había destiando al cultivo del olivar.               
+                </p>
+                
+                <a class="enlace_leer_mas" href="#" >LEER MÁS</a>   
+
+            </div>
+
+            <div>
+
+                <h2 class="H2_del_inicio">BODAS</h2>
+
+                <img class="imagenes_chiquitas_de_inicio" src="images/bodas.jpg" alt="bodas">
+
+                <p class="parrafos_inicio_main">
+                    El mejor enclave para la celebración de tu boda. Reformada para acoger tu boda con las mayores comodidades.         
+                </p>
+                
+                <a class="enlace_leer_mas" href="#" >LEER MÁS</a>                   
+                
+            </div>
+
+            <div>
+
+                <h2 class="H2_del_inicio">EVENTOS</h2>
+
+                <img class="imagenes_chiquitas_de_inicio" src="images/eventos.jpg" alt="eventos">
+
+                <p class="parrafos_inicio_main">
+                    Preparada para albergar cualquier evento importante: Reuniones de empresa, Bodas, Bautizos, fiestas y celebraciones.                
+                </p>
+
+                <a class="enlace_leer_mas" href="#" >LEER MÁS</a>   
+                
+            </div>
+
+            <div>
+
+                <h2 class="H2_del_inicio">COMO LLEGAR</h2>
+
+                <img class="imagenes_chiquitas_de_inicio" src="images/mapa.jpg" alt="mapa de como llegar">
+
+                <p class="parrafos_inicio_main">
+                    Situada a 4km de Sevilla, posee un amplio patio de limoneros y jardines ideal para los aperitivos de tu boda al aire libre.             
+                </p>
+
+                <a class="enlace_leer_mas" href="#" >LEER MÁS</a>           
+                
+            </div>      
+
+        </div>      
+
+    </main>
+
+    <footer>
+
+        <div id="linea" class="centrado_a_1470"> </div>
+
+        <div id="logo_footer">
+
+            <img  src="images/logo_footer.png" alt="logo del footer">
+
+        </div>
+
+        <p>
+            
+            &copy; Hacienda Nuestra Señora de Guadalupe
+
+        </p>        
+
+    </footer>
+
+</div>
+
+        {% endblock %}
+        {% block javascripts %}
+
+            <script src="{{asset('js/jquery-3.3.1.js')}}"></script>
+            <script src="{{asset('js/slick.min.js')}}"></script>
+            <script src="{{asset('js/js.cookie.js')}}"></script>
+            <script src="{{asset('js/cookies.js')}}"></script>
+            <script src="{{asset('js/mi_javascript.js')}}"></script>
+
+        {% endblock %}
+    </body>
+    </html>
